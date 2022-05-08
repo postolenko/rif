@@ -98,4 +98,19 @@ $(document).ready(function() {
       }
     });
 
+    // ------------------
+
+    if( $(".item_slider").length > 0 ) {
+        $(".item_slider").not(".slick-initialized").slick({
+            dots: true,
+            arrows: false,
+            autoplay: false,
+            autoplaySpeed: 4000,
+            speed: 1200,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: true
+        });
+    }
+
 });
