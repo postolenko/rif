@@ -1479,6 +1479,173 @@ textarea:focus {
 
 /*-- /Section 3 - Service --*/
 
+/*-- Section 2 - Prices --*/
+
+.prices_tabs {
+    display: flex;
+    display: -webkit-flex;
+    margin: 10px 0 85px 0;
+}
+
+.prices_tabs > .left_col {
+    width: 388px;
+    margin-right: 20px;
+    padding: 64px 10px 20px 47px;
+    background: #F8F8F8;
+}
+
+.prices_tabs > .right_col {
+    width: calc(100% - 408px);
+    background: #F8F8F8;
+    position: relative;
+}
+
+.tab_link {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #000;
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.tab_link:link,
+.tab_link:visited {
+    color: #000;
+}
+
+.tab_link:active,
+.tab_link.active {
+    color: #E31E24;
+}
+
+.tab_link:hover {
+    color: #E31E24;
+}
+
+.tabs_nav {
+
+}
+
+.tabs_nav li {
+    padding: 16px 0 16px 0;
+}
+
+.prices_tabs > .right_col > input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.prices_tabs .tab_content {
+    padding: 34px 45px 20px 45px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: -200vw;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: opacity;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: opacity;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: opacity;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: opacity;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.prices_tabs input[type="radio"]:checked + .tab_content {
+    opacity: 1;
+    position: relative;
+    left: 0;
+}
+
+.price_table {
+    padding: 18px 0 18px 0;
+}
+
+.price_table .table_row {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.price_table .table_row:nth-child(1) {
+    padding-bottom: 10px;
+}
+
+.price_table .table_row .cell:nth-child(1) {
+    width: calc(100% - 200px);
+    padding: 4px 10px 4px 0;
+}
+
+.price_table .table_row .cell:nth-child(2) {
+    width: 200px;
+    padding: 4px 0 4px 10px;
+    text-align: right;
+}
+
+.price_table h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    color: #1C1B17;
+}
+
+.price_table p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8E8F92;
+}
+
+.button_tab_wrapp {
+    padding: 45px 0 34px 0;
+}
+
+.button_tab_wrapp .button_wrapp {
+    display: inline-block;
+    min-width: 420px;
+}
+
+
+/*-- .Section 2 - Prices --*/
+
+
+
+
+
+
 
 
 /*-------------------------------------------*/

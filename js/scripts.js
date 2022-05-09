@@ -113,4 +113,17 @@ $(document).ready(function() {
         });
     }
 
+    // ------------------
+
+    $(".prices_tabs").each(function() {
+      activeTabFor = $(this).find(".tab_link.active").attr("for");
+      $("#"+activeTabFor).prop("checked",true);
+    });
+
+    $(".tab_link").on("click", function() {
+      parent = $(this).closest(".tabs_nav");
+      parent.find(".tab_link").removeClass("active");
+      $(this).addClass("active");
+    });
+
 });
