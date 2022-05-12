@@ -1708,10 +1708,6 @@ textarea:focus {
     color: #1C1B17;
 }
 
-.article {
-
-}
-
 .article_two_cols {
     display: flex;
     display: -webkit-flex;
@@ -1753,10 +1749,6 @@ textarea:focus {
 
 /*-- Section 4 - Product --*/
 
-.two_cols_title {
-
-}
-
 .two_cols_title_3 {
     margin: 50px 0 18px 0;
 }
@@ -1774,10 +1766,6 @@ textarea:focus {
     padding: 69px 88px 41px 88px;
     background: #F8F8F8;
     overflow: hidden;
-}
-
-.callback_form_title {
-
 }
 
 .callback_form_title h2 {
@@ -1799,10 +1787,6 @@ textarea:focus {
 .callback_form_templ > div {
     width: 33.33%;
     padding: 24px 40px;
-}
-
-.h3_wrapp {
-
 }
 
 .h3_wrapp h3 {
@@ -1889,10 +1873,6 @@ textarea:focus {
     font-size: 18px;
     line-height: 70px;
     color: #1C1B17;
-}
-
-.input_wrapp {
-
 }
 
 .input_wrapp textarea {
@@ -2016,7 +1996,6 @@ textarea:focus {
     line-height: 24px;
     color: #1C1B17;
 }
-
 
 /*-- /Section 4 - Product --*/
 
