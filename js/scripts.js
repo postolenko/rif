@@ -126,4 +126,31 @@ $(document).ready(function() {
       $(this).addClass("active");
     });
 
+    // ------------------
+
+    // $(".placeholder").on("click", function(e) {
+    //   e.preventDefault();
+
+    //   $(".placeholder").each(function() {
+    //     parent2 = $(this).closest(".input_wrapp");
+    //     input2 = parent.find("input, select, textarea");
+    //     if(input2.val() != "" || input2.is(":focus")) {
+    //       parent2.addClass("active");
+    //     } else {
+    //       parent2.removeClass("active");
+    //     }
+    //     // if(input2.val() == "" || input2.focus() != true) {
+    //     //   console.log("val = none");
+    //     //   parent2.removeClass("active");
+    //     // } else {
+    //     //   parent2.addClass("active");
+    //     // }
+    //   });
+    //   // parent = $(this).closest(".input_wrapp");
+    //   // input = parent.find("input, select, textarea");
+    //   // parent.addClass("active");
+    //   input.focus();
+      
+    // });
+
 });
