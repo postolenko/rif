@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">	
 	<title>Rif</title>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 
 <body>
@@ -145,17 +146,45 @@
 		<!-- /Section 1 - Main Page -->
 
 		<!-- Section 2 - Main Page -->
-		<section>
-			<div class="promo_img" style="background-image: url(img/)">
-				<div class="row">
-					<div class="promo_img_descript_wrapp">
-						<div>
-							<div class="promo_img_descript">
-								<div>
-									<p>Объемные световые  буквы <span>от 70 руб/см </span> высоты</p>
+		<section class="promo_slider_wrapp">
+			<div class="promo_slider">
+				<div class="slide">
+					<div class="promo_img" style="background-image: url(img/slide.jpg)">
+						<div class="row">
+							<div class="promo_img_descript_wrapp">
+								<div class="promo_img_descript">
+									<div>
+										<p>Объемные световые<br /> буквы <span class="red">от 70 руб/см</span><br /> высоты</p>
+									</div>
+									<div>
+										<div class="slide_num">
+											<svg class="arrow" width="251" height="16" viewBox="0 0 251 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M250.707 8.70711C251.098 8.31658 251.098 7.68342 250.707 7.29289L244.343 0.928932C243.953 0.538408 243.319 0.538408 242.929 0.928932C242.538 1.31946 242.538 1.95262 242.929 2.34315L248.586 8L242.929 13.6569C242.538 14.0474 242.538 14.6805 242.929 15.0711C243.319 15.4616 243.953 15.4616 244.343 15.0711L250.707 8.70711ZM0 9H125V7H0V9ZM125 9H250V7H125V9Z" fill="#8E8F92"/>
+											</svg>
+											<p class="slide_num_val">01</p>
+										</div>
+									</div>
 								</div>
-								<div>
-									<p class="num">02</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="promo_img" style="background-image: url(img/product.jpg)">
+						<div class="row">
+							<div class="promo_img_descript_wrapp">
+								<div class="promo_img_descript">
+									<div>
+										<p>Объемные световые<br /> буквы <span class="red">от 72 руб/см</span><br /> высоты</p>
+									</div>
+									<div>
+										<div class="slide_num">
+											<svg class="arrow" width="251" height="16" viewBox="0 0 251 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M250.707 8.70711C251.098 8.31658 251.098 7.68342 250.707 7.29289L244.343 0.928932C243.953 0.538408 243.319 0.538408 242.929 0.928932C242.538 1.31946 242.538 1.95262 242.929 2.34315L248.586 8L242.929 13.6569C242.538 14.0474 242.538 14.6805 242.929 15.0711C243.319 15.4616 243.953 15.4616 244.343 15.0711L250.707 8.70711ZM0 9H125V7H0V9ZM125 9H250V7H125V9Z" fill="#8E8F92"/>
+											</svg>
+											<p class="slide_num_val">02</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -164,30 +193,33 @@
 			</div>
 		</section>
 		<!-- /Section 2 - Main Page -->
+
 		<!-- Section 3 - Main Page -->
 		<section>
 			<div class="row">
-				<div class="two_cols_2">
+				<div class="two_cols_2_2">
 					<div class="left_col">
 						<div class="thumb_2_wrapp">
 							<div class="thumb_2">
 								<p>Собственное производство</p>
 							</div>
 							<div class="thumb_2">
-								<p>Бесплатный выезд  замерщика</p>
+								<p>Бесплатный выезд замерщика</p>
 							</div>
 							<div class="thumb_2">
-								<p>Изготовим вывеску  за 3-10 дней</p>
+								<p>Изготовим вывеску за 3-10 дней</p>
 							</div>
 						</div>
 					</div>
 					<div class="right_col">
-						<div class="button_wrapp">
+						<div class="button_box">
 							<div>
-								<a href="#" class="red_pill">Рассчитать стоимость вывески</a>
+								<div class="button_wrapp button_wrapp_less">
+									<a href="#" class="red_pill_2">Рассчитать стоимость вывески</a>
+								</div>
 							</div>
 							<div>
-								<p>И получить бесплатную визуализацию проекта</p>
+								<p>И получить бесплатную визуализацию проекта</p>
 							</div>
 						</div>
 					</div>
@@ -204,40 +236,52 @@
 						<h2>Мы производим</h2>
 					</div>
 					<div class="right_col">
-						<p>Конструкции под все виды наружной рекламы, начиная от простых но качественных объемных букв заканчивая сложными и дизайнерскими входными группами.</p>
+						<div class="inner_wrapp">
+							<p>Конструкции под все виды наружной рекламы, начиная от простых но качественных объемных букв заканчивая сложными и дизайнерскими входными группами.</p>
+						</div>
 					</div>
 				</div>
 				<div class="thumbnails_tree_cols">
 					<div>
-						<div class="thumb_3">
-							<img src="img/thumb_3_01.jpg" alt="" />
-							<p>Вывески<br />  из нержавеющей  стали</p>
+						<div class="thumb_3_wrapp">
+							<a href="#" class="thumb_3 white" style="background-image: url(img/thumb_3_01.jpg)">
+								<p>Вывески<br /> из нержавеющей стали</p>
+							</a>
 						</div>
-						<div class="thumb_3">
-							<img src="img/thumb_3_02.jpg" alt="" />
-							<p>Вывески и буквы <br /> из латуни</p>
-						</div>
-					</div>
-					<div>
-						<div class="thumb_3 big">
-							<img src="img/thumb_3_03.jpg" alt="" />
-							<p>Вывески  с объемными <br /> буквами</p>
+						<div class="thumb_3_wrapp">
+							<a href="#" class="thumb_3 white" style="background-image: url(img/thumb_3_02.jpg)">
+								<p>Вывески и буквы<br /> из латуни</p>
+							</a>
 						</div>
 					</div>
 					<div>
-						<div class="thumbs_3_wrapp">
-							<div class="thumb_3">
-								<img src="img/thumb_3_04.jpg" alt="" />
-								<p>Входные группы <br /> и козырьки</p>
+						<div class="thumb_3_wrapp">
+							<a href="#" class="thumb_3 big">
+								<img src="img/thumb_3_03.png" alt="" />
+								<p>Вывески с объемными<br /> буквами</p>
+							</a>
+						</div>
+					</div>
+					<div>
+						<div class="thumbs_3_inline">
+							<div class="thumb_3_wrapp">
+								<a href="#" class="thumb_3">
+									<img src="img/thumb_3_04.png" alt="" />
+									<p>Входные группы<br /> и козырьки</p>
+								</a>
 							</div>
-							<div class="thumb_3">
-								<img src="img/thumb_3_05.jpg" alt="" />
-								<p>Рекламные стелы <br /> и пилоны</p>
+							<div class="thumb_3_wrapp">
+								<a href="#" class="thumb_3">
+									<img src="img/thumb_3_05.png" alt="" />
+									<p>Рекламные стелы<br /> и пилоны</p>
+								</a>
 							</div>
 						</div>
-						<div class="thumb_3 width_big">
-							<img src="img/thumb_3_06.jpg" alt="" />
-							<p>Крышные<br />  установки</p>
+						<div class="thumb_3_wrapp">
+							<a href="#" class="thumb_3 width_big">
+								<img src="img/thumb_3_06.png" alt="" />
+								<p>Крышные<br /> установки</p>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -253,22 +297,24 @@
 						<div class="num_items">
 							<div class="num_item">
 								<p class="num_red">01</p>
-								<p>Премиальное  обслуживание</p>
+								<p>Премиальное обслуживание</p>
 							</div>
 							<div class="num_item">
 								<p class="num_red">02</p>
-								<p>Все услуги в одном  месте</p>
+								<p>Все услуги в одном месте</p>
 							</div>
 							<div class="num_item">
 								<p class="num_red">03</p>
 								<p>Самые нестандартные изделия</p>
 							</div>
 						</div>
-						<div class="single_img_box" style="background-image: url(img/)"></div>
+						<img src="img/single_img.jpg" class="single_img_box" />
 					</div>
 					<div class="right_col">
-						<h2>Докажем  не словом,  а делом!</h2>
-						<p>Изготовим для вас лучшую наружную рекламу. Мы собрали грандиозный опыт в производстве вывесок, и готовы применить его во всем, начиная дизайн макетом и заканчивая монтажом.</p>
+						<div class="article_inner">
+							<h2>Докажем не словом, а делом!</h2>
+							<p>Изготовим для вас лучшую наружную рекламу. Мы собрали грандиозный опыт в производстве вывесок, и готовы применить его во всем, начиная дизайн макетом и заканчивая монтажом.</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -276,81 +322,165 @@
 		<!-- /Section 5 - Main Page -->
 
 		<!-- Section 6 - Main Page -->
-		<section>
+		<section class="sect_6_mp">
 			<div class="row">
 				<div class="two_cols_title">
 					<div class="left_col">
-						<h2>Полный цикл  обслуживания  клиентов</h2>
+						<h2>Полный цикл обслуживания клиентов</h2>
 					</div>
 					<div class="right_col">
 						<p>От разработки дизайн-проекта до его согласования и воплощения в жизнь.</p>
 						<div class="red_link_wrapp">
-							<a href="#" class="red_link">Смотреть портфолио</a>
+							<a href="#" class="red_link_2">Смотреть портфолио</a>
 						</div>
 					</div>
 				</div>
-
-				<div class="title_img_box">
-					<img src="img/" alt="" />
+			</div>
+			<div class="title_img_box">
+				<img class="mos_logo" src="img/mos_logo.svg" alt="" />
+				<div>
 					<div class="title_img_thumb">
-						<p>Изготовление нестандартных  промостоек и выставочных  стендов</p>
+						<p>Изготовление нестандартных промостоек и выставочных стендов</p>
 					</div>
 					<div class="title_img_thumb">
-						<p>Архитектурные и технические  проекты любой сложности</p>
+						<p>Архитектурные и технические проекты любой сложности</p>
 					</div>
 					<div class="title_img_thumb">
-						<p>Изготовление и монтаж  всех видов наружной  рекламы</p>
+						<p>Изготовление и монтаж всех видов наружной рекламы</p>
 					</div>
 				</div>
+			</div>
+		</section>
+		<!-- /Section 6 - Main Page -->
 
-				<div class="title_two_cols">
-					<div class="left_col">
+		<!-- Section 6_2 - Main Page -->
+
+		<section class="sect_6_2">
+			<div class="row">
+				<div class="h2_two_cols">
+					<div>
 						<h2>Наше портфолио</h2>
 					</div>
-					<div class="right_col">
-						<div class="title_num">
-							<p>02</p>
+					<div>
+						<div class="slide_num">
+							<svg class="arrow" width="251" height="16" viewBox="0 0 251 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M250.707 8.70711C251.098 8.31658 251.098 7.68342 250.707 7.29289L244.343 0.928932C243.953 0.538408 243.319 0.538408 242.929 0.928932C242.538 1.31946 242.538 1.95262 242.929 2.34315L248.586 8L242.929 13.6569C242.538 14.0474 242.538 14.6805 242.929 15.0711C243.319 15.4616 243.953 15.4616 244.343 15.0711L250.707 8.70711ZM0 9H125V7H0V9ZM125 9H250V7H125V9Z" fill="#8E8F92"/>
+							</svg>
+							<p class="slide_num_val products_slide_num">02</p>
 						</div>
 					</div>
 				</div>
 
-				<div class="thumbs_4_wrapp">
-					<div class="thumb_4">
-						<div class="img_box">
-							<img src="img/thumb_4_01.svg" alt="" />
+				<div class="products_slider">
+					<div>
+						<div class="slide">
+							<div class="product_thumb" data-slide-index = "1">
+								<div class="product_icon">
+									<img src="img/product_01.png" alt="" />
+								</div>
+								<div class="product_thumb_descript">
+									<p>Вывески из<br /> нержавеющей<br /> стали</p>
+								</div>
+							</div>
 						</div>
-						<p>Вывески из  нержавеющей  стали</p>
 					</div>
-					<div class="thumb_4">
-						<div class="img_box">
-							<img src="img/thumb_4_02.svg" alt="" />
+					<div>
+						<div class="slide">
+							<div class="product_thumb" data-slide-index = "2">
+								<div class="product_icon">
+									<img src="img/product_02.png" alt="" />
+								</div>
+								<div class="product_thumb_descript">
+									<p>Вывески из<br /> объемных<br /> букв</p>
+								</div>
+							</div>
 						</div>
-						<p>Вывески из  объемных  букв</p>
 					</div>
-					<div class="thumb_4">
-						<div class="img_box">
-							<img src="img/thumb_4_03.svg" alt="" />
+					<div>
+						<div class="slide">
+							<div class="product_thumb" data-slide-index = "3">
+								<div class="product_icon">
+									<img src="img/product_03.png" alt="" />
+								</div>
+								<div class="product_thumb_descript">
+									<p>Дизайн проект<br /> интерьера</p>
+								</div>
+							</div>
 						</div>
-						<p>Дизайн проект  интерьера</p>
 					</div>
-					<div class="thumb_4">
-						<div class="img_box">
-							<img src="img/thumb_4_04.svg" alt="" />
+					<div>
+						<div class="slide">
+							<div class="product_thumb" data-slide-index = "4">
+								<div class="product_icon">
+									<img src="img/product_04.png" alt="" />
+								</div>
+								<div class="product_thumb_descript">
+									<p>Крышные<br /> установки</p>
+								</div>
+							</div>
 						</div>
-						<p>Крышные  установки</p>
+					</div>
+					<div>
+						<div class="slide">
+							<div class="product_thumb" data-slide-index = "5">
+								<div class="product_icon">
+									<img src="img/product_01.png" alt="" />
+								</div>
+								<div class="product_thumb_descript">
+									<p>Вывески из<br /> нержавеющей<br /> стали</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="slide">
+							<div class="product_thumb" data-slide-index = "6">
+								<div class="product_icon">
+									<img src="img/product_02.png" alt="" />
+								</div>
+								<div class="product_thumb_descript">
+									<p>Вывески из<br /> объемных<br /> букв</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="slide">
+							<div class="product_thumb" data-slide-index = "7">
+								<div class="product_icon">
+									<img src="img/product_03.png" alt="" />
+								</div>
+								<div class="product_thumb_descript">
+									<p>Дизайн проект<br /> интерьера</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="slide">
+							<div class="product_thumb" data-slide-index = "8">
+								<div class="product_icon">
+									<img src="img/product_04.png" alt="" />
+								</div>
+								<div class="product_thumb_descript">
+									<p>Крышные<br /> установки</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 
 			</div>
 		</section>
-		<!-- /Section 6 - Main Page -->
+
+		<!-- /Section 6_2 - Main Page -->
 
 		<!-- Section 7 - Main Page -->
-		<section class="grey_bg">
+		<!-- <section class="grey_bg">
 			<div class="row">
 				<div class="two_cols_title">
 					<div class="left_col">
-						<h2>Почему стоит обратиться  к нам?</h2>
+						<h2>Почему стоит обратиться<br /> к нам?</h2>
 					</div>
 					<div class="right_col">
 						<p>Действует гибкая система скидок для постоянных клиентов. Так же предусмотрена возможность постоплаты или рассрочки платежей!</p>
@@ -407,11 +537,11 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- /Section 7 - Main Page -->
 
 		<!-- Section 8 - Main Page -->
-		<section>
+		<!-- <section>
 			<div class="row">
 				<div class="title_2_wrapp">
 					<h2>Вызвать <span>замерщика</span></h2>
@@ -425,11 +555,11 @@
 					</form>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- /Section 8 - Main Page -->
 
 		<!-- Section 9 - Main Page -->
-		<section class="grey_bg">
+		<!-- <section class="grey_bg">
 			<div class="row">
 				<div class="two_cols_title">
 					<div class="left_col">
@@ -516,11 +646,11 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- /Section 9 - Main Page -->
 
 		<!-- Section 10 - Main Page -->
-		<section>
+		<!-- <section>
 			<div class="row">
 				<div class="title_2_wrapp">
 					<h2>Среди <span>наших клиентов</span>:</h2>
@@ -563,11 +693,11 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- /Section 10 - Main Page -->
 
 		<!-- Section 11 - Main Page -->
-		<section class="grey_bg">
+		<!-- <section class="grey_bg">
 			<div class="row">
 				<div class="two_cols_title">
 					<div class="left_col">
@@ -576,7 +706,7 @@
 					<div class="right_col">
 						<p>Посмотрите презентацию о нашей компании  и убедитесь, что нам можно доверять</p>
 						<div class="red_link_wrapp">
-							<a href="#" class="red_link">Смотреть презентацию</a>
+							<a href="#" class="red_link_2">Смотреть презентацию</a>
 						</div>						
 					</div>
 				</div>
@@ -584,7 +714,7 @@
 					<img src="img/single_img_2.png" alt="" />
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- /Section 11 - Main Page -->
 
 		</div>
@@ -593,7 +723,7 @@
 	<!-- Footer -->
 
 		<footer class="footer_section">
-			<div class="row">
+			<!-- <div class="row">
 				<div class="footer_two_cols">
 					<div class="left_col">
 						<div class="two_cols_inner">
@@ -709,7 +839,7 @@
 						</a>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</footer>
 
 	<!-- /Footer -->

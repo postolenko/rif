@@ -25,32 +25,16 @@ $(document).scroll(function() {
 
 $(document).ready(function() {
 
-    if( $(".portfolio_slider").length > 0 ) {
-        $(".portfolio_slider").not(".slick-initialized").slick({
-            dots: true,
-            arrows: true,
+    if( $(".promo_slider").length > 0 ) {
+        $(".promo_slider").not(".slick-initialized").slick({
+            dots: false,
+            arrows: false,
             autoplay: true,
             autoplaySpeed: 4000,
             speed: 1200,
-            slidesToShow: 4,
+            slidesToShow: 1,
             slidesToScroll: 1,
-            // fade: true,
-            responsive: [
-                {
-                  breakpoint: 900,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                  }
-                },
-                {
-                  breakpoint: 540,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                  }
-                }
-              ]
+            fade: true
         });
     }
 
@@ -152,5 +136,61 @@ $(document).ready(function() {
     //   input.focus();
       
     // });
+
+    // -----------------
+
+    if( $(".products_slider").length > 0 ) {
+
+      $('.products_slider').on('init', function(event, slick, currentSlide){
+        slickSlidesToScroll = slick.originalSettings.slidesToScroll;
+        currentSlideIndex = parseInt($('.products_slider .slick-current .product_thumb').attr('data-slide-index'));
+        currentSlides = Math.ceil( currentSlideIndex / slickSlidesToScroll );
+        if(currentSlides < 10) {
+          currentSlides = "0"+currentSlides;
+        }
+        $(".products_slide_num").text(currentSlides);
+        console.log(currentSlides);
+      });
+
+      $('.products_slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+        slickSlidesToScroll = slick.originalSettings.slidesToScroll;
+        currentSlideIndex = parseInt($('.products_slider .slick-current .product_thumb').attr('data-slide-index'));
+        currentSlides = Math.ceil( currentSlideIndex / slickSlidesToScroll );
+        if(currentSlides < 10) {
+          currentSlides = "0"+currentSlides;
+        }
+        $(".products_slide_num").text(currentSlides);
+        console.log(currentSlides);
+
+      });
+
+      $(".products_slider").not(".slick-initialized").slick({
+          dots: false,
+          arrows: false,
+          // autoplay: true,
+          autoplaySpeed: 4000,
+          speed: 1200,
+          slidesToShow: 4,
+          slidesToScroll: 2,
+          // infinite: false
+          // fade: true,
+          // responsive: [
+          //     {
+          //       breakpoint: 900,
+          //       settings: {
+          //         slidesToShow: 2,
+          //         slidesToScroll: 2
+          //       }
+          //     },
+          //     {
+          //       breakpoint: 540,
+          //       settings: {
+          //         slidesToShow: 1,
+          //         slidesToScroll: 1
+          //       }
+          //     }
+          //   ]
+      });
+    }
 
 });
