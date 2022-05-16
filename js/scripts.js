@@ -193,4 +193,94 @@ $(document).ready(function() {
       });
     }
 
+    if( $(".slider_1").length > 0 ) {
+      $(".slider_1").not(".slick-initialized").slick({
+          dots: true,
+          arrows: false,
+          // autoplay: true,
+          autoplaySpeed: 4000,
+          speed: 1200,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          // infinite: false
+          // fade: true,
+          // responsive: [
+          //     {
+          //       breakpoint: 900,
+          //       settings: {
+          //         slidesToShow: 2,
+          //         slidesToScroll: 2
+          //       }
+          //     },
+          //     {
+          //       breakpoint: 540,
+          //       settings: {
+          //         slidesToShow: 1,
+          //         slidesToScroll: 1
+          //       }
+          //     }
+          //   ]
+      });
+    }
+
+    if( $(".testimonial_slider").length > 0 ) {
+      $(".testimonial_slider").not(".slick-initialized").slick({
+          dots: false,
+          arrows: false,
+          // autoplay: true,
+          autoplaySpeed: 4000,
+          speed: 1200,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          // infinite: false
+          // fade: true,
+          // responsive: [
+          //     {
+          //       breakpoint: 900,
+          //       settings: {
+          //         slidesToShow: 2,
+          //         slidesToScroll: 2
+          //       }
+          //     },
+          //     {
+          //       breakpoint: 540,
+          //       settings: {
+          //         slidesToShow: 1,
+          //         slidesToScroll: 1
+          //       }
+          //     }
+          //   ]
+      });
+    }
+
+    if( $(".clients_slider").length > 0 ) {
+      $(".clients_slider").not(".slick-initialized").slick({
+          dots: false,
+          arrows: false,
+          // autoplay: true,
+          autoplaySpeed: 4000,
+          speed: 1200,
+          slidesToShow: 4,
+          slidesToScroll: 2,
+          // infinite: false
+          // fade: true,
+          // responsive: [
+          //     {
+          //       breakpoint: 900,
+          //       settings: {
+          //         slidesToShow: 2,
+          //         slidesToScroll: 2
+          //       }
+          //     },
+          //     {
+          //       breakpoint: 540,
+          //       settings: {
+          //         slidesToShow: 1,
+          //         slidesToScroll: 1
+          //       }
+          //     }
+          //   ]
+      });
+    }
+
 });
