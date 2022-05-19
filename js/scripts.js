@@ -4,6 +4,13 @@ e = d.documentElement,
 g = d.getElementsByTagName('body')[0],
 bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
+function getScrollBtnParams() {
+  if($(document).scrollTop() > $(window).height()) {
+    $(".up_btn").addClass("visible");
+  } else {
+    $(".up_btn").removeClass("visible");
+  }
+}
 
 $(window).load(function() {
 
@@ -12,18 +19,16 @@ $(window).load(function() {
 });
 
 $(window).resize(function() {
-
-
-
+  getScrollBtnParams();
 });
 
 $(document).scroll(function() {
-
-
-
+  getScrollBtnParams();
 });
 
 $(document).ready(function() {
+
+    getScrollBtnParams();
 
     if( $(".promo_slider").length > 0 ) {
         $(".promo_slider").not(".slick-initialized").slick({
@@ -149,7 +154,6 @@ $(document).ready(function() {
           currentSlides = "0"+currentSlides;
         }
         $(".products_slide_num").text(currentSlides);
-        console.log(currentSlides);
       });
 
       $('.products_slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
@@ -160,8 +164,6 @@ $(document).ready(function() {
           currentSlides = "0"+currentSlides;
         }
         $(".products_slide_num").text(currentSlides);
-        console.log(currentSlides);
-
       });
 
       $(".products_slider").not(".slick-initialized").slick({
@@ -174,22 +176,29 @@ $(document).ready(function() {
           slidesToScroll: 2,
           // infinite: false
           // fade: true,
-          // responsive: [
-          //     {
-          //       breakpoint: 900,
-          //       settings: {
-          //         slidesToShow: 2,
-          //         slidesToScroll: 2
-          //       }
-          //     },
-          //     {
-          //       breakpoint: 540,
-          //       settings: {
-          //         slidesToShow: 1,
-          //         slidesToScroll: 1
-          //       }
-          //     }
-          //   ]
+          responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 680,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1
+                }
+              },
+              {
+                breakpoint: 470,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+            ]
       });
     }
 
@@ -204,22 +213,22 @@ $(document).ready(function() {
           slidesToScroll: 3,
           // infinite: false
           // fade: true,
-          // responsive: [
-          //     {
-          //       breakpoint: 900,
-          //       settings: {
-          //         slidesToShow: 2,
-          //         slidesToScroll: 2
-          //       }
-          //     },
-          //     {
-          //       breakpoint: 540,
-          //       settings: {
-          //         slidesToShow: 1,
-          //         slidesToScroll: 1
-          //       }
-          //     }
-          //   ]
+          responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 590,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+            ]
       });
     }
 
@@ -234,22 +243,15 @@ $(document).ready(function() {
           slidesToScroll: 2,
           // infinite: false
           // fade: true,
-          // responsive: [
-          //     {
-          //       breakpoint: 900,
-          //       settings: {
-          //         slidesToShow: 2,
-          //         slidesToScroll: 2
-          //       }
-          //     },
-          //     {
-          //       breakpoint: 540,
-          //       settings: {
-          //         slidesToShow: 1,
-          //         slidesToScroll: 1
-          //       }
-          //     }
-          //   ]
+          responsive: [
+              {
+                breakpoint: 767,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+            ]
       });
     }
 
@@ -264,23 +266,60 @@ $(document).ready(function() {
           slidesToScroll: 2,
           // infinite: false
           // fade: true,
-          // responsive: [
-          //     {
-          //       breakpoint: 900,
-          //       settings: {
-          //         slidesToShow: 2,
-          //         slidesToScroll: 2
-          //       }
-          //     },
-          //     {
-          //       breakpoint: 540,
-          //       settings: {
-          //         slidesToShow: 1,
-          //         slidesToScroll: 1
-          //       }
-          //     }
-          //   ]
+          responsive: [
+              {
+                breakpoint: 1240,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 450,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+            ]
       });
     }
+
+    // ------------------
+
+    $(".up_btn").on("click", function(e) {
+      e.preventDefault();
+      $('body,html').animate({
+            scrollTop: 0
+        }, 1000);
+        return false;
+    });
+
+    // ------------------
+
+    $(".respmenubtn").click(function(e) {
+      e.preventDefault();
+      if( $("#resp_nav").is(":hidden") ) {
+          $("#resp_nav").fadeIn(300);
+          $(this).addClass("active");
+      } else {
+          $("#resp_nav").fadeOut(300);
+          $(this).removeClass("active");
+      }
+    });
+
+    $(".close_nav").click(function(e) {
+      e.preventDefault();
+      $("#resp_nav").fadeOut(300);
+    });
+    
+    $(this).keydown(function(eventObject){
+        if (eventObject.which == 27 &&
+            $("#resp_nav").is(":visible") &&
+            bodyWidth <= 767) {
+                $("#resp_nav").fadeOut(300);
+                $(".respmenubtn").removeClass("active");
+        }
+    });
 
 });
