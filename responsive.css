@@ -4,6 +4,12 @@
 	padding: 0 60px;
 }
 
+
+}
+
+@media only screen and (max-width: 1800px) {
+
+
 /*-- Side Menu --*/
 
 .side_menu {
@@ -66,10 +72,7 @@
 }
 
 /*-- /Side Menu --*/
-
-}
-
-@media only screen and (max-width: 1800px) {
+	
 /*-- Header --*/
 
 .header {
