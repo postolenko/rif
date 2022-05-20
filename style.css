@@ -474,10 +474,14 @@ button {
 /*-------------------------------------------*/
 
 .header {
-    background: #F4F4F4;
+    background: #fff;
     padding: 18px 0 5px 0;
     position: relative;
     z-index: 2;
+}
+
+.header.main {
+    background: #F4F4F4;
 }
 
 .header_site {
