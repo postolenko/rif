@@ -72,7 +72,7 @@
 }
 
 /*-- /Side Menu --*/
-	
+
 /*-- Header --*/
 
 .header {
@@ -91,6 +91,7 @@
 }
 
 @media only screen and (max-width: 1600px) {
+
 /*-- Header --*/
 
 .header_site > .left {
@@ -148,6 +149,35 @@
 }
 
 /*-- /Section 2 - Main Page --*/
+
+/*-- Section 3 - Service --*/
+
+.two_cols_title h2 {
+    font-size: 83px;
+}
+
+.book_sect {
+    padding-bottom: 440px;
+}
+
+/*-- /Section 3 - Service --*/
+
+.item > div:nth-child(1) {
+    width: calc(100% - 500px);
+    padding: 35px 35px 20px 35px;
+}
+
+.item > div:nth-child(2) {
+    width: 500px;
+}
+
+.prices_thumbs {
+    margin: 15px -10px 20px -10px;
+}
+
+.item_slider .slide {
+    height: 450px;
+}
 
 }
 
@@ -418,6 +448,58 @@ h1 {
 
 /*-- /Section 3 - Service --*/
 
+/*-- Section 1 - Product --*/
+
+.main_title_2 h1 {
+    font-size: 40px;
+    line-height: 1.45;
+}
+
+/*-- /Section 1 - Product --*/
+
+/*-- Section 3 - Product --*/
+
+.article_two_cols > div:nth-child(odd) {
+    width: 50%;
+    padding: 10px 25px 10px 25px;
+}
+
+.article_two_cols > div:nth-child(even) {
+    width: 50%;
+    padding: 10px 25px 10px 25px;
+}
+
+.article_text {
+    padding: 10px 25px 10px 25px;
+}
+
+.article > img {
+    margin: 20px auto;
+}
+
+/*-- /Section 3 - Product --*/
+
+/*-- Section 4 - Product --*/
+
+.callback_form_wrapp {
+    padding: 25px 35px 25px 35px;
+}
+
+/*-- /Section 4 - Product --*/
+
+/*-- Section 1 - Contacts --*/
+
+.contacts_thumbnails {
+    margin: 0 -10px 24px -10px;
+}
+
+.contact_thumb {
+    width: 50%;
+    padding: 10px 10px;
+}
+
+/*-- /Section 1 - Contacts --*/
+
 }
 
 @media only screen and (max-width: 1240px) {
@@ -551,6 +633,91 @@ h1 {
 }
 
 /*-- /Section 10 - Main Page --*/
+
+/*-- Section 3 - Product --*/
+
+.sect_3_product {
+    padding: 30px 0;
+}
+
+.h2_wrapp_2 h2 {
+    font-size: 47px;
+}
+
+/*-- /Section 3 - Product --*/
+
+/*-- Section 4 - Product --*/
+
+.callback_form_templ {
+    margin: 25px -20px;
+}
+
+.callback_form_templ > div {
+    padding: 20px 20px;
+}
+
+.callback_form_title h2 {
+    font-size: 30px;
+    line-height: 46px;
+}
+
+.h3_wrapp h3 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.callback_form_templ .checkbox {
+    padding: 15px 0 15px 0;
+}
+
+.callback_form_templ .input_wrapp {
+    margin: 10px 0;
+}
+
+.file_input {
+    padding: 20px 0 20px 0;
+}
+
+.input_wrapp .placeholder {
+    font-size: 17px;
+}
+
+.checkbox label {
+    font-size: 17px;
+}
+
+/*-- /Section 4 - Product --*/
+
+/*-- Section 1 - Services --*/
+
+.service {
+    min-height: 310px;
+    padding: 35px 25px 10px 25px;
+}
+
+.service_icon {
+    height: 120px;
+}
+
+.service p {
+    font-size: 21px;
+    line-height: 28px;
+}
+
+/*-- /Section 1 - Services --*/
+
+/*-- Section 2 - Prices --*/
+
+.prices_tabs > .left_col {
+    width: 325px;
+    padding: 35px 20px 20px 25px;
+}
+
+.prices_tabs > .right_col {
+    width: calc(100% - 325px);
+}
+
+/*-- /Section 2 - Prices --*/
 
 }
 
@@ -789,6 +956,61 @@ h1 {
 	display: none;
 }
 
+/*-- Section 2 - Product --*/
+
+.item {
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+
+.item > div:nth-child(1) {
+    width: 100%;
+    padding: 35px 25px 20px 25px;
+    order: 2;
+}
+
+.item > div:nth-child(2) {
+    width: 100%;
+    order: 1;
+}
+
+/*-- /Section 2 - Product --*/
+
+/*-- Section 1 - Contacts --*/
+
+.contact_thumb p {
+    white-space: normal;
+}
+
+/*-- /Section 1 - Contacts --*/
+
+/*-- Section 1 - Service --*/
+
+.service_thumb {
+    width: calc(50% - 20px);
+    min-height: 280px;
+    padding: 45px 30px 20px 30px;
+}
+
+/*-- /Section 1 - Service --*/
+
+/*-- Section 2 - Service --*/
+
+.item .buttons_wrapp {
+    margin-top: 30px;
+}
+
+/*-- /Section 2 - Service --*/
+
+/*-- Section 2 - Prices --*/
+
+.price_table h3 {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+/*-- /Section 2 - Prices --*/
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -889,12 +1111,107 @@ h1 {
 
 /*-- /Section 8 - Main Page --*/
 
+/*-- Section 4 - Product --*/
+
+.callback_form_templ {
+    margin: 5px -20px;
+}
+
+.callback_form_templ > div {
+    width: 50%;
+}
+
+.submit_wrapp {
+    margin: 8px 0 8px 0;
+}
+
+.submit_wrapp > div:nth-child(odd) {
+    width: 425px;
+}
+
+.submit_wrapp > div:nth-child(even) {
+    width: calc(100% - 425px);
+}
+
+/*-- /Section 4 - Product --*/
+
+/*-- Section 1 - Contacts --*/
+
+.map_box {
+    height: 300px;
+    margin-bottom: 40px;
+}
+
+/*-- /Section 1 - Contacts --*/
+
+/*-- Section 1 - Services --*/
+
+.services_thumbs .service {
+    width: calc(50% - 20px);
+}
+
+/*-- /Section 1 - Services --*/
+
+/*-- Section 2 - Prices --*/
+
+.prices_tabs {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 10px 0 15px 0;
+}
+
+.prices_tabs > .left_col {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding: 35px 20px 20px 25px;
+}
+
+.prices_tabs > .right_col {
+    width: 100%;
+}
+
+.tabs_nav {
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.tabs_nav li {
+    padding: 10px 15px 10px 15px;
+}
+
+.prices_tabs .tab_content {
+    padding: 7px 25px 7px 25px;
+}
+
+.button_tab_wrapp {
+    padding: 20px 0;
+}
+
+/*-- /Section 2 - Prices --*/
+
 }
 
 @media only screen and (max-width: 900px) {
 
 h1 {
     font-size: 29px;
+}
+
+.breadcrumbs {
+    margin: 25px -13px 20px -13px;
+}
+
+.breadcrumbs li:after {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.breadcrumbs li a {
+    font-size: 15px;
 }
 
 /*-- Section 1 - Main Page --*/
@@ -1064,6 +1381,58 @@ h1 {
 
 /*-- /Section 3 - Service --*/
 
+/*-- Section 1 - Product --*/
+
+.main_title_2 h1 {
+	padding-top: 0;
+    font-size: 29px;
+}
+
+/*-- /Section 1 - Product --*/
+
+/*-- Section 3 - Product --*/
+
+.h2_wrapp_2 {
+    padding: 10px 0 20px 0;
+}
+
+.article_two_cols > div:nth-child(odd) {
+    width: 100%;
+    padding: 0;
+}
+
+.article_two_cols > div:nth-child(even) {
+    width: 100%;
+    padding: 0;
+}
+
+.article_text {
+    padding: 0;
+}
+
+/*-- /Section 3 - Product --*/
+
+/*-- Section 4 - Product --*/
+
+.callback_form_title h2 {
+    font-size: 23px;
+    line-height: 37px;
+}
+
+.submit_wrapp > div:nth-child(odd) {
+    width: 310px;
+}
+
+.submit_wrapp > div:nth-child(even) {
+    width: calc(100% - 310px);
+}
+
+.button_wrapp_2 {
+    min-width: 300px;
+}
+
+/*-- /Section 4 - Product --*/
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -1075,6 +1444,10 @@ h1 {
 .red_pill,
 .red_pill_2 {
 	min-height: 60px;
+}
+
+.button_wrapp:after {
+    height: 30px;
 }
 
 /*-- Side Menu --*/
@@ -1276,6 +1649,96 @@ h1 {
 
 /*-- /Section 9 - Main Page --*/
 
+/*-- Section 2 - Product --*/
+
+.item_slider .slide {
+    height: 350px;
+}
+
+.item_slider .slick-dots {
+    bottom: 6px;
+}
+
+.item > div:nth-child(1) {
+    padding: 11px 25px 20px 25px;
+}
+
+.item h3 {
+    padding: 8px 0;
+    font-size: 21px;
+    line-height: 28px;
+}
+
+.item p {
+    padding: 10px 0;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.prices_thumbs {
+    margin: 5px -10px 15px -10px;
+}
+
+.price_thumb {
+    width: 215px;
+    padding: 8px 10px;
+}
+
+.price_thumb p {
+	padding: 0;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/*-- /Section 2 - Product --*/
+
+/*-- Section 3 - Product --*/
+
+.h2_wrapp_2 h2 {
+    font-size: 43px;
+}
+
+/*-- /Section 3 - Product --*/
+
+/*-- Section 4 - Product --*/
+
+.callback_form_templ > div {
+    width: 100%;
+}
+
+.file_input {
+    padding: 20px 0 10px 0;
+}
+
+/*-- /Section 4 - Product --*/
+
+/*-- Section 1 - Contacts --*/
+
+.contacts_thumbnails {
+    margin: 0 0 25px 0;
+}
+
+.contact_thumb {
+	width: 100%;
+    padding: 10px 0;
+}
+
+/*-- /Section 1 - Contacts --*/
+
+/*-- Section 1 - Service --*/
+
+.breadcrumbs + .two_cols_2 {
+    padding-top: 2px;
+}
+
+.main_title_2 p {
+    padding: 5px 0 5px 0;
+    font-size: 19px;
+    line-height: 35px;
+}
+
+/*-- /Section 1 - Service --*/
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -1342,6 +1805,30 @@ h1 {
 }
 
 /*-- /Section 10 - Main Page --*/
+
+/*-- Section 4 - Product --*/
+
+.callback_form_wrapp {
+    padding: 25px 15px 25px 15px;
+}
+
+.submit_wrapp {
+    margin: 0;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.submit_wrapp > div:nth-child(odd) {
+    width: 100%;
+    padding: 5px 0;
+}
+
+.submit_wrapp > div:nth-child(even) {
+    width: 100%;
+    padding: 5px 0;
+}
+
+/*-- /Section 4 - Product --*/
 
 }
 
@@ -1526,8 +2013,79 @@ h1 {
 
 /*-- /Section 3 - Service --*/
 
+/*-- Section 2 - Product --*/
+
+.button_wrapp_2 {
+    min-width: 330px;
 }
 
+/*-- /Section 2 - Product --*/
+
+/*-- Section 1 - Service --*/
+
+.services_thumbnails {
+    margin: 0;
+}
+
+.service_thumb {
+    width: 100%;
+    min-height: auto;
+    padding: 25px 15px 20px 15px;
+}
+
+/*-- /Section 1 - Service --*/
+
+}
+
+@media only screen and (max-width: 530px) {
+
+/*-- Section 2 - Prices --*/
+
+	.price_table .table_row:nth-child(1) .cell:nth-child(2) {
+		display: none;
+	}
+
+	.price_table .table_row:nth-child(1) .cell:nth-child(1) {
+	    width: 100%;
+	    padding: 4px 0;
+	}
+
+	.price_table .table_row:nth-child(1) h3 {
+	    font-size: 20px;
+	}
+
+	.price_table .table_row {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		border-bottom: 1px solid #ededed;
+	}
+
+	.button_tab_wrapp .button_wrapp {
+	    min-width: 100%;
+	}
+
+	.price_table h3 {
+	    display: block;
+	}
+
+	.price_table .table_row .cell:nth-child(1),
+	.price_table .table_row .cell:nth-child(2) {
+	    width: 100%;
+	}
+
+	.price_table .table_row .cell:nth-child(1) {
+		padding-top: 10px;
+		padding-bottom: 0;
+	}
+
+	.price_table .table_row .cell:nth-child(2) {
+	    text-align: left;
+	    padding: 0 0 10px 0;
+	}
+
+/*-- /Section 2 - Prices --*/
+
+}
 
 @media only screen and (max-width: 480px) {
 
@@ -1647,6 +2205,53 @@ h1 {
 
 /*-- /Section 9 - Main Page --*/
 
+/*-- Section 2 - Product --*/
+
+.item_slider .slide {
+    height: 290px;
+}
+
+.items .item {
+    margin: 20px 0;
+}
+
+.button_wrapp_2 {
+    min-width: 100%;
+}
+
+/*-- /Section 2 - Product --*/
+
+/*-- Section 3 - Product --*/
+
+.h2_wrapp_2 h2 {
+    font-size: 29px;
+}
+
+/*-- /Section 3 - Product --*/
+
+/*-- Section 1 - Services --*/
+
+.services_thumbs {
+    margin: 20px 0;
+}
+
+.services_thumbs .service {
+    width: 100%;
+    margin: 10px 0;
+    min-height: 280px;
+} 
+
+/*-- /Section 1 - Services --*/
+
+/*-- Section 2 - Service --*/
+
+.buttons_wrapp > div {
+    width: 100%;
+    padding: 10px 0;
+}
+
+/*-- /Section 2 - Service --*/
+
 }
 
 @media only screen and (max-width: 410px) {
@@ -1694,5 +2299,17 @@ h1 {
 }
 
 /*-- /Section 6 - Main Page --*/
+
+/*-- Section 2 - Product --*/
+
+.item > div:nth-child(1) {
+    padding: 11px 15px 11px 15px;
+}
+
+.item_slider .slide {
+    height: 250px;
+}
+
+/*-- /Section 2 - Product --*/
 
 }

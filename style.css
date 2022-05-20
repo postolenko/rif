@@ -2221,7 +2221,7 @@ button {
     cursor: pointer;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1;
+    line-height: 1.3;
     text-transform: uppercase;
     color: #000;
     -webkit-transition-property: color;
@@ -2264,7 +2264,7 @@ button {
 }
 
 .tabs_nav li {
-    padding: 16px 0 16px 0;
+    padding: 14px 0 14px 0;
 }
 
 .prices_tabs > .right_col > input[type="radio"] {
@@ -2331,10 +2331,15 @@ button {
 }
 
 .price_table h3 {
+    display: none;
     font-weight: 700;
     font-size: 18px;
     line-height: 32px;
     color: #1C1B17;
+}
+
+.price_table .table_row:nth-child(1) h3 {
+    display: block;
 }
 
 .price_table p {
