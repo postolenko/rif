@@ -304,6 +304,10 @@ button {
     display: none;
 }
 
+.visible_650 {
+    display: none;
+}
+
 /*-- Slick --*/
 
 .slick-arrow {
@@ -2856,7 +2860,12 @@ footer {
 }
 
 .footer_logo p {
+    text-align: left;
     color: #fff;
+}
+
+.logo_2..footer_logo > div:nth-child(1) svg {
+    max-width: 80px;
 }
 
 .soc_list {
@@ -3108,7 +3117,7 @@ footer {
     cursor: pointer;
 }
 
-.footer_nav > li a {
+.footer_nav > li > a {
     font-weight: 700;
     font-size: 20px;
     line-height: 1;
@@ -3135,17 +3144,17 @@ footer {
     transition-timing-function: ease;
 }
 
-.footer_nav > li a:link,
-.footer_nav > li a:visited {
+.footer_nav > li > a:link,
+.footer_nav > li > a:visited {
     color: #FFF;
 }
 
-.footer_nav > li a:active,
-.footer_nav > li a.active {
+.footer_nav > li > a:active,
+.footer_nav > li > a.active {
     color: #E31E24;
 }
 
-.footer_nav > li a:hover {
+.footer_nav > li > a:hover {
     color: #E31E24;
 }
 
@@ -3160,9 +3169,12 @@ footer {
 
 .footer_nav > li > .sub_menu_2 {
     padding: 14px 0;
-    position: absolute;
+/*    position: absolute;
     top: calc(100% - 5px);
-    left: 10px;
+    left: 10px;*/
+    position: relative;
+    top: -5px;
+    left: 0;
 }
 
 .sub_menu_2 li {

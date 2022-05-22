@@ -88,6 +88,22 @@
 }
 
 /*-- /Header --*/
+
+/*-- Up Button --*/
+
+.up_btn {
+    width: 45px;
+    height: 45px;
+    right: 20px;
+}
+
+.up_btn svg {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/*-- /Up Button --*/
+
 }
 
 @media only screen and (max-width: 1600px) {
@@ -111,10 +127,12 @@
 
 .logo_2 > div:nth-child(1) {
     width: 90px;
+    padding-right: 5px;
 }
 
 .logo_2 > div:nth-child(1) svg {
-	width: 80px;
+	max-width: 80px;
+    width: 100%;
 }
 
 .main_nav_wrapp {
@@ -719,6 +737,56 @@ h1 {
 
 /*-- /Section 2 - Prices --*/
 
+/*-- Footer --*/
+
+.tel_link {
+    font-size: 18px;
+}
+
+.sub_menu_2 {
+    min-width: 250px;
+}
+
+.footer_nav_columns > li {
+    padding: 0 0 43px 0;
+}
+
+.footer_nav > li > a {
+    font-size: 16px;
+}
+
+.sub_menu_2 > li a {
+    font-size: 14px;
+}
+
+.footer_nav .dr_title {
+    font-size: 16px;
+}
+
+.soc_list li a {
+    width: 30px;
+    height: 30px;
+}
+
+.adress_text p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.link_2_wrapp {
+    padding: 15px 0 15px 0;
+}
+
+.link_2 {
+    font-size: 18px;
+}
+
+.footer_red_pill_wrapp {
+    padding: 60px 0 30px 0;
+}
+
+/*-- /Footer --*/
+
 }
 
 @media only screen and (max-width: 1140px) {
@@ -944,6 +1012,14 @@ h1 {
 
 /*-- /Section 9 - Main Page --*/
 
+/*-- Footer --*/
+
+.sub_menu_2 {
+    min-width: 220px;
+}
+
+/*-- /Footer --*/
+
 }
 
 @media only screen and (max-width: 1124px) {
@@ -1010,6 +1086,35 @@ h1 {
 }
 
 /*-- /Section 2 - Prices --*/
+
+/*-- Footer --*/
+
+.footer_two_cols_2 {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.footer_two_cols_2 > .left_col {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.footer_two_cols_2 > .right_col {
+    width: 316px;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+.inlines_2 {
+    margin: 7px -20px;
+    justify-content: center;
+}
+
+.inlines_2 > div {
+    padding: 5px 20px;
+}
+
+/*-- /Footer --*/
 
 }
 
@@ -1433,6 +1538,43 @@ h1 {
 
 /*-- /Section 4 - Product --*/
 
+/*-- Footer --*/
+
+.footer_two_cols {
+    padding: 30px 0 15px 0;
+}
+
+.footer_two_cols > .left_col {
+    width: 70%;
+    padding: 10px 10px 10px 0;
+}
+
+.footer_two_cols > .right_col {
+    width: 30%;
+    padding: 10px 0 10px 10px;
+}
+
+.footer_nav {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+
+.footer_nav_inline {
+    margin: 12px 0;
+}
+
+.footer_nav_inline > li {
+    width: 100%;
+    padding: 3px 0 40px 0;
+}
+
+.footer_red_pill_wrapp {
+    padding: 25px 0 25px 0;
+}
+
+/*-- /Footer --*/
+
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -1739,6 +1881,61 @@ h1 {
 
 /*-- /Section 1 - Service --*/
 
+/*-- Footer --*/
+
+.footer_bottom {
+    padding: 5px 0 5px 0;
+}
+
+.footer_two_cols > .left_col {
+    width: 65%;
+}
+
+.footer_two_cols > .right_col {
+    width: 35%;
+}
+
+.two_cols_inner > .left_col {
+    width: 60%;
+}
+
+.two_cols_inner > .right_col {
+    width: 40%;
+}
+
+.footer_nav_columns > li {
+    padding: 0 0 30px 0;
+}
+
+.footer_nav > li > a {
+    font-size: 14px;
+}
+
+.footer_nav .dr_title {
+    font-size: 14px;
+}
+
+.footer_nav_inline > li {
+    padding: 5px 0 25px 0;
+}
+
+.logo_wrapp {
+    margin: 0 0 30px;
+}
+
+.inlines_2 {
+    display: block;
+    margin: 7px 0;
+}
+
+.inlines_2 > div {
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+}
+
+/*-- /Footer --*/
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -1829,6 +2026,88 @@ h1 {
 }
 
 /*-- /Section 4 - Product --*/
+
+/*-- Footer --*/
+
+.sub_menu_2 {
+    min-width: 180px;
+}
+
+/*-- /Footer --*/
+
+}
+
+@media only screen and (max-width: 650px) {
+
+.novisible_650 {
+    display: none;
+}
+
+.visible_650 {
+    display: block;
+}
+
+/*-- Footer --*/
+
+.footer_two_cols > .left_col {
+    width: 100%;
+    padding: 0;
+}
+
+.footer_two_cols > .right_col {
+    width: 100%;
+    padding: 0;
+}
+
+.two_cols_inner > .left_col {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+.two_cols_inner > .right_col {
+    width: 100%;
+    padding: 15px 0 0 0;
+    text-align: center;
+}
+
+.soc_list {
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.footer_nav_inline {
+    justify-content: center;
+    -webkit-justify-content: center; 
+}
+
+.footer_nav_columns > li:last-child {
+    padding: 0 0 20px 0;
+}
+
+.footer_nav_inline > li {
+    padding: 5px 0 25px 0;
+    max-width: 100%;
+    text-align: center;
+}
+
+.footer_nav_inline > li:last-child {
+    padding-bottom: 0;
+}
+
+.footer_nav_inline > li .dr_title_wrapp {
+    position: relative;
+    left: 8px;
+}
+
+.footer_red_pill_wrapp {
+    padding: 6px 0 25px 0;
+    display: flex;
+    justify-content: center;
+    -webkit-justify-content: center; 
+}
+
+/*-- /Footer --*/    
 
 }
 
@@ -2000,6 +2279,14 @@ h1 {
 
 /*-- /Section 7 - Main Page --*/
 
+/*-- Section 9 - Main Page --*/
+
+.testimonial_slider {
+    margin: 25px -10px 0 -10px;
+}
+
+/*-- /Section 9 - Main Page --*/
+
 /*-- Section 3 - Service --*/
 
 .two_cols_title_2 {
@@ -2034,6 +2321,19 @@ h1 {
 }
 
 /*-- /Section 1 - Service --*/
+
+/*-- Footer --*/
+
+.logo_2.footer_logo > div:nth-child(1) {
+    width: 110px;
+}
+
+.logo_2.footer_logo > div:nth-child(1) svg {
+    width: 100%;
+    height: auto;
+}
+
+/*-- /Footer --*/
 
 }
 
@@ -2252,6 +2552,16 @@ h1 {
 
 /*-- /Section 2 - Service --*/
 
+/*-- Up Button --*/
+
+.up_btn {
+    width: 35px;
+    height: 35px;
+    right: 10px;
+}
+
+/*-- /Up Button --*/
+
 }
 
 @media only screen and (max-width: 410px) {
@@ -2311,5 +2621,29 @@ h1 {
 }
 
 /*-- /Section 2 - Product --*/
+
+/*-- Footer --*/
+
+.footer_two_cols_2 > .right_col {
+    width: 280px;
+}
+
+.inlines_2 p {
+    font-size: 14px;
+}
+
+.link_3 {
+    font-size: 14px;
+}
+
+.corp_logo > div:nth-child(1) {
+    padding: 17px 10px 0 0;
+}
+
+.corp_logo p {
+    font-size: 12px;
+}
+
+/*-- /Footer --*/
 
 }
