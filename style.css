@@ -2806,6 +2806,632 @@ button {
 
 /*-- /Section 5 - Product --*/
 
+/*-- Calc --*/
+
+.calc_sect {
+    background: #F8F8F8;
+    padding: 57px 0 74px 0;
+    position: relative;
+}
+
+.calc_sect:before {
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: left center;
+    background-image: url(img/ruller_bg_left.png);
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+
+.calc_sect:after {
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-position: right center;
+    background-image: url(img/ruller_bg_right.png);
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+
+.calc_row {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.calc_header {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.calc_header > div:nth-child(1) {
+    width: 50%;
+    padding: 10px 10px 10px 0;
+}
+
+.calc_header > div:nth-child(2) {
+    width: 50%;
+    padding: 10px 0 10px 10px;
+}
+
+.calc_header h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #1C1B17;
+}
+
+.calc_nav {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    margin: 0 -17px;
+    padding-top: 22px;
+}
+
+.calc_nav li {
+    padding: 10px 17px;
+}
+
+.calc_nav li a {
+    display: inline-block;
+    vertical-align: top;
+    border-bottom: 1px solid transparent;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #000;
+    -webkit-transition-property: color, border;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color, border;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color, border;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color, border;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color, border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.calc_nav li a:link,
+.calc_nav li a:visited {
+    border-bottom: 1px solid transparent;
+    color: #000;
+}
+
+.calc_nav li a:active,
+.calc_nav li a.active {
+    border-bottom: 1px solid #E31E24;
+    color: #E31E24;
+}
+
+.calc_nav li a:hover {
+    border-bottom: 1px solid #E31E24;
+    color: #E31E24;
+}
+
+.calc_templ {
+    display: flex;
+    display: -webkit-flex;
+    margin: 90px -40px 58px -40px;
+}
+
+.calc_templ > div {
+    width: 33.33%;
+    padding: 10px 40px;
+}
+
+.slide_ranges {
+    height: 460px;
+    max-width: 426px;
+    margin-top: -10px;
+    margin-bottom: 70px;
+    position: relative;
+    left: 10px;
+}
+
+.vertical_sl {
+    height: 428px;
+    width: 30px;
+    position: relative;
+}
+
+.vertical_sl > .slide_vert {
+    height: calc(100% - 50px);
+    position: absolute;
+    bottom: 23px;
+    left: 0;
+}
+
+.gorizontal_sl {
+    width: calc(100% - 90px);
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+}
+
+.gorizontal_sl > #gorizontalSl {
+
+}
+
+.slide_line {
+    height: 4px;
+    background: #C4C4C4;
+}
+
+.sl_val {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 80px;
+    font-family: 'Gotham Pro';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1C1B17;
+}
+
+.top_val {
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.bottom_val {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.slide_line_vert {
+
+}
+
+.left_val {
+    position: absolute;
+    top: -12px;
+    right: calc(100% - 12px);
+}
+
+.right_val {
+    position: absolute;
+    top: -12px;
+    left: calc(100% + 12px);
+}
+
+.elem_picture {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.calc_templ h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1C1B17;
+}
+
+.calc_templ h4 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 27px;    
+    color: #1C1B17;
+}
+
+.calc_input_wrapp {
+
+}
+
+.calc_input_wrapp + h3 {
+    padding-top: 48px;
+}
+
+.calc_templ h3 + h4 {
+    padding-top: 20px;
+}
+
+.calc_input_wrapp + h4 {
+    padding-top: 10px;
+}
+
+.calc_input_wrapp input {
+    display: block;
+    width: auto;
+    width: 100%;
+    height: 58px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #C4C4C4;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 58px;
+    color: #1C1B17;
+}
+
+.calc_input_wrapp input::placeholder {
+    color: #1C1B17;
+}
+
+.calc_input_wrapp select {
+    display: block;
+    width: auto;
+    width: 100%;
+    height: 58px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #C4C4C4;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 58px;
+    color: #1C1B17;
+}
+
+.selcet_calc_input_wrapp {
+    position: relative;
+}
+
+.selcet_calc_input_wrapp:after {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url(img/select_arrow_2.svg) center no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: calc(50% - 12px);
+    right: 0;
+    z-index: 3;
+}
+
+.calc_input_wrapp select option {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1C1B17;
+}
+
+.checkbox_wrapp_2 {
+    padding: 9px 0;
+}
+
+.calc_templ h3 + .checkbox_wrapp_2 {
+    margin-top: 11px;
+}
+
+.checkbox_wrapp_2 + h3 {
+    padding-top: 11px;
+}
+
+.checkbox_2 {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 40px;
+    cursor: pointer;
+    position: relative;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1C1B17;
+}
+
+.checkbox_2 input {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+}
+
+.checkbox_2 span {
+    position: relative;
+}
+
+.checkbox_2 span:before {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url(img/checkbox_empty.svg) center no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -3px;
+    left: -40px;
+}
+
+.checkbox_2 input:checked + span:before {
+    background-image: url(img/checkbox_checked.svg);
+}
+
+.radio_wrapp_2 {
+    padding: 9px 0;
+}
+
+.radio_wrapp_2 + h3 {
+    padding-top: 9px;
+}
+
+.calc_templ h3 + .radio_wrapp_2 {
+    margin-top: 11px;
+}
+
+.radio_2 {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 40px;
+    cursor: pointer;
+    position: relative;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1C1B17;
+}
+
+.radio_2 input {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+}
+
+.radio_2 span {
+    position: relative;
+}
+
+.radio_2 span:before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(img/radio_empty.svg) center no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -1px;
+    left: -40px;
+}
+
+.radio_2 input:checked + span:before {
+    background-image: url(img/radio_checked.svg);
+}
+
+.checkbox_2_2 span:before {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: #EEE;
+    background-size: contain;
+    position: absolute;
+    top: -3px;
+    left: -40px;
+}
+
+.checkbox_2_2 input:checked + span:before {
+    background: #E31E24;
+}
+
+.calc_res_wrapp {
+    padding: 58px 0 20px 0;
+}
+
+.calc_res_wrapp p {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #1C1B17;
+}
+
+.res_val {
+    padding: 0 12px;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 27px;
+}
+
+.calc_res_wrapp .rub {
+    text-transform: none;
+    font-weight: normal;
+}
+
+.color_wrapp_2 {
+    padding: 9px 0;
+}
+
+.calc_templ h3 + .color_wrapp_2 {
+    margin-top: 9px;
+}
+
+.color input[type="color"] {
+    width: 24px;
+    height: 24px;
+    -webkit-appearance: none;
+    border: none;
+    background: #F8F8F8;
+    overflow: hidden;
+    outline: none;
+    cursor: inherit;
+}
+
+.color input[type=color]::-moz-focus-inner {
+    width: 24px;
+    height: 24px;
+    -webkit-appearance: none;
+    border: none;
+    background: #F8F8F8;
+    overflow: hidden;
+    outline: none;
+    cursor: inherit;
+}
+
+.color input[type=color]::-moz-color-swatch {
+    width: 24px;
+    height: 24px;
+    -webkit-appearance: none;
+    border: none;
+    background: #F8F8F8;
+    overflow: hidden;
+    outline: none;
+    cursor: inherit;
+}
+
+.color input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;    
+}
+
+.color input[type="color"]::-webkit-color-swatch {
+  border: none;
+}
+
+.color {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 40px;
+    cursor: pointer;
+    position: relative;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1C1B17;
+}
+
+.color input {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: #EEE;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.range_sl .noUi-connects {
+    border-radius: 0;
+}
+
+.range_sl .noUi-handle:after,
+.range_sl .noUi-handle:before {
+    display: none;
+}
+
+.range_sl .noUi-target {
+    background: #C4C4C4;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.range_sl .noUi-horizontal {
+    height: 4px;
+}
+
+.range_sl .noUi-handle {
+    border: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #8E8F92;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.range_sl .noUi-horizontal .noUi-handle {
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    top: -8px;
+}
+
+.range_sl .noUi-vertical .noUi-handle {
+    width: 20px;
+    height: 20px;
+    right: -8px;
+    bottom: -10px;
+}
+
+.range_sl .noUi-vertical {
+    width: 4px;
+}
+
+.range_sl .noUi-tooltip {
+    background: transparent;
+    border: none;
+    padding: 0;
+    font-family: 'Gotham Pro';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1C1B17;
+}
+
+.two_cols_params {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.two_cols_params > div:nth-child(odd) {
+    width: 50%;
+    padding: 5px 15px 5px 0;
+}
+
+.two_cols_params > div:nth-child(even) {
+    width: 50%;
+    padding: 5px 0 5px 15px;
+}
+
+
+/*-- /Calc --*/
+
+
+
+
+
+
+
+
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
 /*-------------------------------------------*/
@@ -3465,6 +4091,5 @@ footer {
     border-radius: 50%;
     -webkit-border-radius: 50%;
 }
-
 
 /*-- /Side Menu --*/

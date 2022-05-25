@@ -338,4 +338,183 @@ $(document).ready(function() {
         }
     });
 
+    // ---------------------
+
+    var sliderVer = document.getElementById('verticalSl');
+
+    noUiSlider.create(sliderVer, {
+        start: 10,
+        connect: false,
+        direction: 'rtl',
+        orientation: "vertical",
+        tooltips: true,
+        range: {
+            'min': 10,
+            'max': 200
+        }
+    });
+
+    sliderVer.noUiSlider.on('set', function (e) { 
+      tooltipVal = parseInt(e[0]);
+      $(".vertical_sl .noUi-tooltip").text(tooltipVal + " см");
+    });
+
+    sliderVer.noUiSlider.on('slide', function (e) { 
+      tooltipVal = parseInt(e[0]);
+      $(".vertical_sl .noUi-tooltip").text(tooltipVal + " см");
+    });
+
+    sliderVer.noUiSlider.on('update', function (e) { 
+      tooltipVal = parseInt(e[0]);
+      $(".vertical_sl .noUi-tooltip").text(tooltipVal + " см");
+    });
+
+
+    // var sliderGor = document.getElementById('gorizontalSl');
+
+    // noUiSlider.create(sliderGor, {
+    //     start: 10,
+    //     connect: false,
+    //     tooltips: true,
+    //     range: {
+    //         'min': 10,
+    //         'max': 200
+    //     }
+    // });
+
+    // sliderGor.noUiSlider.on('set', function (e) { 
+    //   tooltipVal = parseInt(e[0]);
+    //   $(".gorizontal_sl .noUi-tooltip").text(tooltipVal + " см");
+    // });
+
+    // sliderGor.noUiSlider.on('slide', function (e) { 
+    //   tooltipVal = parseInt(e[0]);
+    //   $(".gorizontal_sl .noUi-tooltip").text(tooltipVal + " см");
+    // });
+
+    // sliderGor.noUiSlider.on('update', function (e) { 
+    //   tooltipVal = parseInt(e[0]);
+    //   $(".gorizontal_sl .noUi-tooltip").text(tooltipVal + " см");
+    // });
+
+
+
+    var sliderVer2 = document.getElementById('verticalSl2');
+
+    noUiSlider.create(sliderVer2, {
+        start: 10,
+        connect: false,
+        direction: 'rtl',
+        orientation: "vertical",
+        tooltips: true,
+        range: {
+            'min': 10,
+            'max': 200
+        }
+    });
+
+    sliderVer2.noUiSlider.on('set', function (e) { 
+      tooltipVal = parseInt(e[0]);
+      $(".vertical_sl .noUi-tooltip").text(tooltipVal + " см");
+    });
+
+    sliderVer2.noUiSlider.on('slide', function (e) { 
+      tooltipVal = parseInt(e[0]);
+      $(".vertical_sl .noUi-tooltip").text(tooltipVal + " см");
+    });
+
+    sliderVer2.noUiSlider.on('update', function (e) { 
+      tooltipVal = parseInt(e[0]);
+      $(".vertical_sl .noUi-tooltip").text(tooltipVal + " см");
+    });
+
+
+    var sliderGor2 = document.getElementById('gorizontalSl2');
+
+    noUiSlider.create(sliderGor2, {
+        start: 0.2,
+        connect: false,
+        tooltips: true,
+        range: {
+            'min': 0.2,
+            'max': 12
+        }
+    });
+
+    sliderGor2.noUiSlider.on('set', function (e) { 
+      tooltipVal = e[0];
+      $(".gorizontal_sl .noUi-tooltip").text(tooltipVal + " m");
+    });
+
+    sliderGor2.noUiSlider.on('slide', function (e) { 
+      tooltipVal = e[0];
+      $(".gorizontal_sl .noUi-tooltip").text(tooltipVal + " m");
+    });
+
+    sliderGor2.noUiSlider.on('update', function (e) { 
+      tooltipVal = e[0];
+      $(".gorizontal_sl .noUi-tooltip").text(tooltipVal + " m");
+    });
+
+
+
+    var sliderVer3 = document.getElementById('verticalSl3');
+
+    noUiSlider.create(sliderVer3, {
+        start: 10,
+        connect: false,
+        direction: 'rtl',
+        orientation: "vertical",
+        tooltips: true,
+        range: {
+            'min': 10,
+            'max': 200
+        }
+    });
+
+    sliderVer3.noUiSlider.on('set', function (e) { 
+      tooltipVal = parseInt(e[0]);
+      $(".vertical_sl .noUi-tooltip").text(tooltipVal + " см");
+    });
+
+    sliderVer3.noUiSlider.on('slide', function (e) { 
+      tooltipVal = parseInt(e[0]);
+      $(".vertical_sl .noUi-tooltip").text(tooltipVal + " см");
+    });
+
+    sliderVer3.noUiSlider.on('update', function (e) { 
+      tooltipVal = parseInt(e[0]);
+      $(".vertical_sl .noUi-tooltip").text(tooltipVal + " см");
+    });
+
+
+    var sliderGor3 = document.getElementById('gorizontalSl3');
+
+    noUiSlider.create(sliderGor3, {
+        start: 0.2,
+        connect: false,
+        tooltips: true,
+        range: {
+            'min': 0.2,
+            'max': 12
+        }
+    });
+
+    sliderGor3.noUiSlider.on('set', function (e) { 
+      tooltipVal = e[0];
+      $(".gorizontal_sl .noUi-tooltip").text(tooltipVal + " м");
+    });
+
+    sliderGor3.noUiSlider.on('slide', function (e) { 
+      tooltipVal = e[0];
+      $(".gorizontal_sl .noUi-tooltip").text(tooltipVal + " м");
+    });
+
+    sliderGor3.noUiSlider.on('update', function (e) { 
+      tooltipVal = e[0];
+      $(".gorizontal_sl .noUi-tooltip").text(tooltipVal + " м");
+    });
+
+
+
 });

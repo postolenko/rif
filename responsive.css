@@ -197,6 +197,60 @@
     height: 450px;
 }
 
+/*-- Calc --*/
+
+.calc_sect {
+    padding: 20px 0 50px 0;
+}
+
+.calc_sect:before {
+    display: none;
+}
+
+.calc_sect:after {
+    display: none;
+}
+
+.calc_header h2 {
+    font-size: 30px;
+}
+
+.calc_nav {
+    margin: 0 -8px;
+    padding-top: 6px;
+}
+
+.calc_nav li {
+    padding: 7px 8px;
+}
+
+.calc_templ {
+    margin: 30px -20px 15px -20px;
+}
+
+.calc_templ > div {
+    padding: 10px 20px;
+}
+
+.slide_ranges {
+    max-width: 381px;
+}
+
+.slide_ranges {
+    left: 55px;
+}
+
+.calc_templ h3 {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.calc_res_wrapp {
+    padding: 20px 0;
+}
+
+/*-- /Calc --*/
+
 }
 
 @media only screen and (max-width: 1500px) {
@@ -1116,6 +1170,85 @@ h1 {
 
 /*-- /Footer --*/
 
+/*-- Calc --*/
+
+.calc_sect {
+    padding: 20px 0;
+}
+
+.calc_header > div:nth-child(1) {
+    width: 100%;
+    padding: 5px 0;
+}
+
+.calc_header > div:nth-child(2) {
+    width: 100%;
+    padding: 5px 0;
+}
+
+.calc_nav {
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+}
+
+.calc_templ h3 {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.slide_ranges {
+    height: 350px;
+    max-width: 250px;
+    width: 80%;
+}
+
+.vertical_sl {
+    height: 314px;
+}
+
+.calc_input_wrapp input {
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.calc_input_wrapp select {
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.checkbox_2 {
+    padding-left: 40px;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.radio_2 {
+    padding-left: 40px;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.color {
+    padding-left: 40px;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.calc_res_wrapp p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.res_val {
+    font-size: 28px;
+    line-height: 30px;
+}
+
+
+/*-- /Calc --*/
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1538,6 +1671,25 @@ h1 {
 
 /*-- /Section 4 - Product --*/
 
+/*-- Calc --*/
+
+.calc_header h2 {
+    font-size: 24px;
+}
+
+.calc_templ {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.calc_templ > div {
+    width: 100%;
+    padding: 10px 0;
+}
+
+/*-- /Calc --*/
+
 /*-- Footer --*/
 
 .footer_two_cols {
@@ -1880,6 +2032,28 @@ h1 {
 }
 
 /*-- /Section 1 - Service --*/
+
+/*-- Calc --*/
+
+.slide_ranges {
+    left: 0;
+}
+
+.sl_val {
+    min-width: 63px;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.vertical_sl {
+    left: 100%;
+}
+
+.gorizontal_sl {
+    width: calc(100% - 72px);
+}
+
+/*-- /Calc --*/
 
 /*-- Footer --*/
 

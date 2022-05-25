@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">	
+	<title>Rif</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<!-- Calc -->
+
+		<div class="calc_sect">
+			<div class="calc_row">
+				<div class="calc_header">
+					<div>
+						<h2>Онлайн калькулятор</h2>
+					</div>
+					<div>
+						<ul class="calc_nav">
+							<li><a href="#" class="active">Объемные буквы</a></li>
+							<li><a href="#">Световые короба</a></li>
+							<li><a href="#">Панель-кронштейн</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="calc_templ">
+					<div>
+						<div class="slide_ranges">
+							<div class="vertical_sl range_sl">
+								<div class="top_val sl_val">200 см</div>
+								<div class="slide_vert" id="verticalSl"></div>
+								<div class="bottom_val sl_val">10 см</div>
+							</div>
+							<div class="gorizontal_sl range_sl">
+								<!-- <div class="left_val sl_val">10 см</div> -->
+								<div class="slide_line" id="gorizontalSl"></div>
+								<!-- <div class="right_val sl_val">200 см</div> -->
+							</div>
+							<img class="elem_picture" src="img/elem_picture.png" alt="" />
+						</div>
+						<h3>Высота</h3>
+						<div class="calc_input_wrapp">
+							<input type="text" placeholder="" value="10 см">
+						</div>
+					</div>
+					<div>
+						<h3>Введите слова</h3>
+						<div class="calc_input_wrapp">
+							<input type="text" placeholder="Например: Nike" value="">
+						</div>
+						<h3>Шрифт</h3>
+						<div class="calc_input_wrapp selcet_calc_input_wrapp">
+							<select>
+								<option val="Стандартный">Стандартный</option>
+								<option val="Другой 1">Другой 1</option>
+								<option val="Другой 2">Другой 2</option>
+							</select>
+						</div>
+						<h3>Выберите материал:</h3>
+						<h4>Лицевая поверхность</h4>
+						<div class="calc_input_wrapp selcet_calc_input_wrapp">
+							<select>
+								<option val="Пластик ПВХ">Пластик ПВХ</option>
+								<option val="Другой 1">Другой 1</option>
+								<option val="Другой 2">Другой 2</option>
+							</select>
+						</div>
+						<h4>Боковая поверхность</h4>
+						<div class="calc_input_wrapp selcet_calc_input_wrapp">
+							<select>
+								<option val="Пластик ПВХ">Пластик ПВХ</option>
+								<option val="Другой 1">Другой 1</option>
+								<option val="Другой 2">Другой 2</option>
+							</select>
+						</div>
+						<h4>Каркас</h4>
+						<div class="calc_input_wrapp selcet_calc_input_wrapp">
+							<select>
+								<option val="Пластик ПВХ">Пластик ПВХ</option>
+								<option val="Другой 1">Другой 1</option>
+								<option val="Другой 2">Другой 2</option>
+							</select>
+						</div>
+					</div>
+					<div>
+						<h3>Выберите тип подсветки букв:</h3>
+						<div class="checkbox_wrapp_2">
+							<label class="checkbox_2" for="ch_1"><input type="checkbox" id="ch_1" name="ch_1"><span>Внутренняя подсветка</span></label>
+						</div>
+						<div class="checkbox_wrapp_2">
+							<label class="checkbox_2" for="ch_2"><input type="checkbox" id="ch_2" name="ch_2"><span>Открытые светодиоды</span></label>
+						</div>
+						<div class="checkbox_wrapp_2">
+							<label class="checkbox_2" for="ch_4"><input type="checkbox" id="ch_4" name="ch_4"><span>Неоновая подсветка</span></label>
+						</div>
+						<div class="checkbox_wrapp_2">
+							<label class="checkbox_2" for="ch_5"><input type="checkbox" id="ch_5" name="ch_5"><span>Контражурная подсветка</span></label>
+						</div>
+						<div class="checkbox_wrapp_2">
+							<label class="checkbox_2" for="ch_6"><input type="checkbox" id="ch_6" name="ch_6"><span>Открытый неон</span></label>
+						</div>
+						<div class="checkbox_wrapp_2">
+							<label class="checkbox_2" for="ch_7"><input type="checkbox" id="ch_7" name="ch_7"><span>Световые борта</span></label>
+						</div>
+						<h3>Место монтажа</h3>
+						<div class="radio_wrapp_2">
+							<label class="radio_2" for="radio_1"><input type="radio" id="radio_1" name="radio_1"><span>Улица</span></label>
+						</div>
+						<div class="radio_wrapp_2">
+							<label class="radio_2" for="radio_2"><input type="radio" id="radio_2" name="radio_1"><span>Интерьер</span></label>
+						</div>
+						<h3>Выберите цвет</h3>
+						<div class="color_wrapp_2">
+							<label class="color" for="color_1"><input value="#E31E24" type="color" id="color_1" name="color_1"><span>Цвет лицевой поверхности</span></label>
+						</div>
+						<div class="color_wrapp_2">
+							<label class="color" for="color_2"><input value="#EEEEEE" type="color" id="color_2" name="color_2"><span>Цвет боковой поверхности</span></label>
+						</div>
+					</div>
+				</div>
+				<div class="calc_res_wrapp">
+					<p>ИТОГО:<span class="res_val">800</span><span class="rub">руб.</span></p>
+				</div>
+			</div>
+		</div>
+
+		<br /><br />
+
+		<div class="calc_sect">
+			<div class="calc_row">
+				<div class="calc_header">
+					<div>
+						<h2>Онлайн калькулятор</h2>
+					</div>
+					<div>
+						<ul class="calc_nav">
+							<li><a href="#">Объемные буквы</a></li>
+							<li><a href="#" class="active">Световые короба</a></li>
+							<li><a href="#">Панель-кронштейн</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="calc_templ">
+					<div>
+						<div class="slide_ranges">
+							<div class="vertical_sl range_sl">
+								<div class="top_val sl_val">200 см</div>
+								<div class="slide_vert" id="verticalSl2"></div>
+								<div class="bottom_val sl_val">10 см</div>
+							</div>
+							<div class="gorizontal_sl range_sl">
+								<div class="left_val sl_val">0.2 m</div>
+								<div id="gorizontalSl2"></div>
+								<div class="right_val sl_val">12 m</div>
+							</div>
+							<img class="elem_picture" src="img/elem_picture.png" alt="" />
+						</div>
+						
+						<div class="two_cols_params">
+							<div>
+								<h3>Высота</h3>
+								<div class="calc_input_wrapp">
+									<input type="text" placeholder="" value="10 см">
+								</div>
+							</div>
+							<div>
+								<h3>Длина</h3>
+								<div class="calc_input_wrapp">
+									<input type="text" placeholder="" value="10 m">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<h3>ВЫБЕРИТЕ МАТЕРИАЛ</h3>
+						<h4>Maтepиaл рекламной пoвepxнocти</h4>
+						<div class="calc_input_wrapp selcet_calc_input_wrapp">
+							<select>
+								<option val="Стандартный">Акрил</option>
+								<option val="Другой 1">Другой 1</option>
+								<option val="Другой 2">Другой 2</option>
+							</select>
+						</div>
+						<h4>Maтepиaл бoкoвoй пoвepxнocти</h4>
+						<div class="calc_input_wrapp selcet_calc_input_wrapp">
+							<select>
+								<option val="Пластик ПВХ">Пластик ПВХ</option>
+								<option val="Другой 1">Другой 1</option>
+								<option val="Другой 2">Другой 2</option>
+							</select>
+						</div>
+						<h3>Место монтажа</h3>
+						<div class="radio_wrapp_2">
+							<label class="radio_2" for="radio_2_1"><input type="radio" id="radio_2_1" name="radio_2_1"><span>Улица</span></label>
+						</div>
+						<div class="radio_wrapp_2">
+							<label class="radio_2" for="radio_2_2"><input type="radio" id="radio_2_2" name="radio_2_1"><span>Интерьер</span></label>
+						</div>
+					</div>
+					<div>
+						<h3>ВЫБЕРИТЕ ТИП ПОДСВЕТКИ КОРОБА</h3>
+						<div class="checkbox_wrapp_2">
+							<label class="checkbox_2" for="ch_2_1"><input type="checkbox" id="ch_2_1" name="ch_2_1"><span>Люминесцентные лампы</span></label>
+						</div>
+						<div class="checkbox_wrapp_2">
+							<label class="checkbox_2" for="ch_2_2"><input type="checkbox" id="ch_2_2" name="ch_2_2"><span>Модульные диоды</span></label>
+						</div>
+						<div class="checkbox_wrapp_2">
+							<label class="checkbox_2" for="ch_2_3"><input type="checkbox" id="ch_2_3" name="ch_2_3"><span>Светодиодная лента</span></label>
+						</div>
+						<div class="checkbox_wrapp_2">
+							<label class="checkbox_2" for="ch_2_4"><input type="checkbox" id="ch_2_4" name="ch_2_4"><span>Внешний неон</span></label>
+						</div>
+						<div class="checkbox_wrapp_2">
+							<label class="checkbox_2" for="ch_2_5"><input type="checkbox" id="ch_2_5" name="ch_2_5"><span>Неоновая пoдcвeткa</span></label>
+						</div>
+						<h3>ВЫБИРИТЕ ФОРМУ КОРОБА</h3>
+						<div class="radio_wrapp_2">
+							<label class="radio_2" for="radio_2_3"><input type="radio" id="radio_2_3" name="radio_2_3"><span>Прямоугольный</span></label>
+						</div>
+						<div class="radio_wrapp_2">
+							<label class="radio_2" for="radio_2_4"><input type="radio" id="radio_2_4" name="radio_2_4"><span>Фигурный</span></label>
+						</div>
+						<div class="radio_wrapp_2">
+							<label class="radio_2" for="radio_2_5"><input type="radio" id="radio_2_5" name="radio_2_5"><span>Напольний</span></label>
+						</div>
+					</div>
+				</div>
+				<div class="calc_res_wrapp">
+					<p>ИТОГО:<span class="res_val">800</span><span class="rub">руб.</span></p>
+				</div>
+			</div>
+		</div>
+
+		<br /><br />
+
+		<div class="calc_sect">
+			<div class="calc_row">
+				<div class="calc_header">
+					<div>
+						<h2>Онлайн калькулятор</h2>
+					</div>
+					<div>
+						<ul class="calc_nav">
+							<li><a href="#">Объемные буквы</a></li>
+							<li><a href="#">Световые короба</a></li>
+							<li><a href="#" class="active">Панель-кронштейн</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="calc_templ">
+					<div>
+						<div class="slide_ranges">
+							<div class="vertical_sl range_sl">
+								<div class="top_val sl_val">200 см</div>
+								<div class="slide_vert" id="verticalSl3"></div>
+								<div class="bottom_val sl_val">10 см</div>
+							</div>
+							<div class="gorizontal_sl range_sl">
+								<div class="left_val sl_val">0.2 m</div>
+								<div class="slide_line" id="gorizontalSl3"></div>
+								<div class="right_val sl_val">12 m</div>
+							</div>
+							<img class="elem_picture" src="img/elem_picture.png" alt="" />
+						</div>
+						
+						<div class="two_cols_params">
+							<div>
+								<h3>Высота</h3>
+								<div class="calc_input_wrapp">
+									<input type="text" placeholder="" value="10 см">
+								</div>
+							</div>
+							<div>
+								<h3>Длина</h3>
+								<div class="calc_input_wrapp">
+									<input type="text" placeholder="" value="10 m">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<h3>ВЫБЕРИТЕ МАТЕРИАЛ</h3>
+						<h4>Maтepиaл рекламной пoвepxнocти</h4>
+						<div class="calc_input_wrapp selcet_calc_input_wrapp">
+							<select>
+								<option val="Стандартный">Акрил</option>
+								<option val="Другой 1">Другой 1</option>
+								<option val="Другой 2">Другой 2</option>
+							</select>
+						</div>
+						<h4>Maтepиaл бoкoвoй пoвepxнocти</h4>
+						<div class="calc_input_wrapp selcet_calc_input_wrapp">
+							<select>
+								<option val="Пластик ПВХ">Пластик ПВХ</option>
+								<option val="Другой 1">Другой 1</option>
+								<option val="Другой 2">Другой 2</option>
+							</select>
+						</div>
+						<h3>Место монтажа</h3>
+						<div class="radio_wrapp_2">
+							<label class="radio_2" for="radio_3_1"><input type="radio" id="radio_3_1" name="radio_3_1"><span>Улица</span></label>
+						</div>
+						<div class="radio_wrapp_2">
+							<label class="radio_2" for="radio_3_2"><input type="radio" id="radio_3_2" name="radio_3_1"><span>Интерьер</span></label>
+						</div>
+					</div>
+					<div>
+						<h3>ВЫБЕРИТЕ ТИП ПОДСВЕТКИ ПАНЕЛИ</h3>
+						<div class="checkbox_wrapp_2">
+							<label class="checkbox_2" for="ch_3_1"><input type="checkbox" id="ch_3_1" name="ch_3_1"><span>Люминесцентные лампы</span></label>
+						</div>
+						<div class="checkbox_wrapp_2">
+							<label class="checkbox_2" for="ch_3_2"><input type="checkbox" id="ch_3_2" name="ch_3_2"><span>Модульные диоды</span></label>
+						</div>
+						<div class="checkbox_wrapp_2">
+							<label class="checkbox_2" for="ch_3_3"><input type="checkbox" id="ch_3_3" name="ch_3_3"><span>Светодиодная лента</span></label>
+						</div>
+						<div class="checkbox_wrapp_2">
+							<label class="checkbox_2" for="ch_3_4"><input type="checkbox" id="ch_3_4" name="ch_3_4"><span>Внешний неон</span></label>
+						</div>
+						<div class="checkbox_wrapp_2">
+							<label class="checkbox_2" for="ch_3_5"><input type="checkbox" id="ch_3_5" name="ch_3_5"><span>Неоновая пoдcвeткa</span></label>
+						</div>
+						<h3>ВЫБИРИТЕ ФОРМУ ПАНЕЛИ</h3>
+						<div class="radio_wrapp_2">
+							<label class="radio_2" for="radio_3_3"><input type="radio" id="radio_3_3" name="radio_3_3"><span>Прямоугольная</span></label>
+						</div>
+						<div class="radio_wrapp_2">
+							<label class="radio_2" for="radio_3_4"><input type="radio" id="radio_3_4" name="radio_3_4"><span>Фигурная</span></label>
+						</div>
+						<div class="radio_wrapp_2">
+							<label class="radio_2" for="radio_3_5"><input type="radio" id="radio_3_5" name="radio_3_5"><span>Круглая</span></label>
+						</div>
+					</div>
+				</div>
+				<div class="calc_res_wrapp">
+					<p>ИТОГО:<span class="res_val">800</span><span class="rub">руб.</span></p>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- /Calc -->
+
+	</div>
+
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/nouislider.min.css">
+	<script src="vendors/js/jquery.js"></script>
+	<script src="vendors/js/wNumb.min.js"></script>
+	<script src="vendors/js/nouislider.min.js"></script>
+	<script src="slick/slick.js"></script>
+	<script src="js/scripts.js"></script>
+
+</body>
+</html>
